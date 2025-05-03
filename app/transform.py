@@ -10,7 +10,7 @@ def extract_json(df, json_schema):
     .drop("value")\
     .drop("json_array")\
 
-
+ 
 def block_transform(df):
     return df.select(
         col("height").alias("block_height"),
