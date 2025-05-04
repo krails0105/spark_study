@@ -72,7 +72,6 @@ def block_transform(df):
     ).drop("tx")
  
 def transaction_transform(df):
-        
     return df.select(
         col("height").alias("block_height"),
         timestamp_seconds(col("time")).alias("block_time"),
