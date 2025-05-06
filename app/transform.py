@@ -105,7 +105,7 @@ def transaction_transform(df):
         col("tx.fee").alias("fee"),
         col("tx.hex").alias("hex"),
         current_timestamp().alias("updated_at")
-    )   
+    )    
     
 def transaction_input_transform(df):
     return df.select(
