@@ -70,7 +70,7 @@ def block_transform(df):
         col("nextblockhash").alias("next_block_hash"),
         current_timestamp().alias("updated_at")
     ).drop("tx")
- 
+  
 def transaction_transform(df):
     return df.select(
         col("height").alias("block_height"),
